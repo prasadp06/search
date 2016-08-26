@@ -1,0 +1,28 @@
+<html ng-app="schedulerApp">
+    <head>
+        <title> Scheduler </title>
+        
+        <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap-theme.min.css" >
+        <!-- Latest compiled and minified JavaScript -->
+        
+        <script src="scripts/angular.js" ></script>
+        <script src="scripts/angular-route.js" ></script>
+        <script src="scripts/app.js" ></script>
+        <script src="scripts/page.js" ></script>
+        <script src="scripts/login.js" ></script>
+        <script src="scripts/jobs.js" ></script>
+        <script src="scripts/securityFactory.js"></script>
+        <script src="scripts/schedularService.js"></script>
+        <link rel="stylesheet" href="style/style.css" >
+
+    </head>
+    
+    <body>
+        <page-nav></page-nav>
+        <div class="container">
+            <div ng-view></div>
+        </div> <!-- /container -->
+    </body>
+</html>

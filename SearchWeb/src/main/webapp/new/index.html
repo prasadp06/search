@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Starwood" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Starwood Hotels and Resorts</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- siimple style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/hotel.js"></script>
+  </head>
+
+  <body ng-controller="StarwoodController as star">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Starwood Hotels &amp; Resorts</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign up</a></li>
+			<li><a href="#">Sign in</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="header">
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-4" >
+					<h1>Let Your Journey Begin </h1>
+					<h2 class="subtitle">One Inspired Company, A Better Way to Experience The World</h2>
+					<form class="form-inline signup" role="form" ng-controler="SearchControler as searchCtrl" ng-submit="searchCtrl.doSearch()" novalidate>
+					  <div class="input-group">
+      					<input ng-model="searchCtrl.search.text" type="text" class="form-control search-theme" placeholder="Search for..." required>
+					    <span class="input-group-btn">
+					        <button class="btn btn-theme-search" type="button">Find Your Stay</button>
+						</span>
+    					</div>
+
+					</form>					
+				</div>
+				<div class="col-md-8">
+					<ul class="nav nav-tabs">
+	  					<li class="active"><a data-toggle="tab" href="#homeTab">Hotels Found</a></li>
+	  					<li><a data-toggle="tab" href="#mapTab">Map</a></li>
+	  				</ul>
+	  				<div class="tab-content">
+	  					<div id="homeTab" class="tab-pane fade in active">
+			  				<div class="thm-scroll">
+								<div class="panel-group" ng-repeat="hotel in star.hotels">
+								  <div class="panel panel-default">
+								    <div class="panel-heading">{{ hotel.name }} 
+								    	<span class="category"> - ( SPG Category {{ hotel.category }} )</span>
+								    </div>
+								    <div class="panel-body">
+								    	<div class="row">
+								    		<div class="col-sm-4"><img ng-src="{{hotel.images[0].thumb}}" class="img-rounded" alt="Hotel 1" width="200" height="200"></div>
+								    		<div class="col-sm-4">
+								    			<div class="details">
+								    				<div class="address">{{ hotel.address.address1 }} <br/>
+													{{ hotel.address.city }}, {{ hotel.address.state }} {{ hotel.address.pin }} <br />{{ hotel.address.country }}</div>
+													<div class="phone">(1)(203) 358-8400</div>
+													<p>0.92 km / 0.57 miles from center of Stamford.</p>
+													
+												</div>
+											</div>
+								    		<div class="col-sm-4">
+						    					<div class="list-group" ng-show="hotel.price">
+						    						<div class="list-group-item-heading"> <h4 class="righthead">Lowest Standred Rate</h4></div>
+						    						<div class="list-group-item-text">
+						    							<span class="price">{{hotel.price | currency}}</span> <span style="margin-left:55px;">&nbsp;</span>
+						    							<button class="btn btn-theme" type="button">Book &gt;</button>
+						    						</div>
+						  						</div>
+								    			<div class="list-group" ng-show="hotel.points">
+								    				<div class="list-group-item-heading"><h4 class="righthead">SPG Free Nights</h4></div>
+													<div class="list-group-item-text">
+														<span class="price">{{ hotel.points}}</span>SPG Points 
+														<button class="btn btn-theme" type="button">Book &gt;</button>
+													</div>
+						  						</div>
+
+								    		</div>
+								    	</div>
+								    	<hotel-details></hotel-details>
+								    </div>
+								  </div>
+								  
+								</div>
+							</div>
+						</div>
+						<div id="mapTab" class="tab-pane fade"> 
+							Map
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+					<p class="copyright">&copy; 2015 Starwood Hotels &amp; Resorts Worldwide, Inc.</p>
+			</div>
+		</div>		
+	</div>	
+	</div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+
+  </body>
+</html>
