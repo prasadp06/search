@@ -1,0 +1,5 @@
+com/smartsearch/dao/jdbc/impl/UserServiceImplTest.class
+com/smartsearch/dao/AppTest.class
+com/smartsearch/jpa/SearchServiceTest.class
+com/smartsearch/dao/jdbc/impl/SearchDaoServiceImplTest.class
+com/smartsearch/jdbc/SearchServiceTest.class
