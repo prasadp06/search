@@ -19,7 +19,7 @@
 		http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
 		http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd">
 	
-	<import resource="classpath:search-config.xml" />
+	<import resource="classpath*:search-config.xml" />
 	
 	<!-- JAXWS Configuration -->
 	

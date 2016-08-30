@@ -32,90 +32,99 @@
   	<!-- Module Dependency  -->
   	
   	<dependency>
-		<groupId>SmartSearch</groupId>
-  		<artifactId>Search</artifactId>
-		<version>4.0.0</version>
-	</dependency>
+			<groupId>SmartSearch</groupId>
+  			<artifactId>Search</artifactId>
+			<version>4.0.3</version>
+		</dependency>
   	
   	<!-- Third Party Dependency -->
   	<dependency>
-		<groupId>org.apache.cxf</groupId>
-		<artifactId>cxf-rt-transports-http</artifactId>
-		<version>${cxf.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.cxf</groupId>
-		<artifactId>cxf-rt-frontend-jaxrs</artifactId>
-		<version>${cxf.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.cxf</groupId>
-		<artifactId>cxf-rt-rs-service-description</artifactId>
-		<version>3.0.0-milestone1</version>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.cxf</groupId>
-		<artifactId>cxf-rt-frontend-jaxws</artifactId>
-		<version>${cxf.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-core</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-jdbc</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-context</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
-	<!-- dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-beans</artifactId>
-		<version>4.1.6.RELEASE</version>
-	  </dependency -->
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-web</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.security</groupId>
-		<artifactId>spring-security-core</artifactId>
-		<version>4.0.1.RELEASE</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.security</groupId>
-		<artifactId>spring-security-web</artifactId>
-		<version>4.0.1.RELEASE</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.data</groupId>
-		<artifactId>spring-data-commons-core</artifactId>
-		<version>1.4.1.RELEASE</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.data</groupId>
-		<artifactId>spring-data-jpa</artifactId>
-		<version>1.2.0.RELEASE</version>
-	</dependency>
-	
-	<dependency>
-		<groupId>org.springframework.data</groupId>
-		<artifactId>spring-data-commons</artifactId>
-		<version>1.6.3.RELEASE</version>
-	</dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-rs-service-description</artifactId>
+			<version>3.0.0-milestone1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>4.1.6.RELEASE</version>
+		  </dependency -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>4.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+  			<groupId>org.springframework.security</groupId>
+  			<artifactId>spring-security-web</artifactId>
+  			<version>4.0.1.RELEASE</version>
+  		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons-core</artifactId>
+			<version>1.4.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.2.0.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+  			<groupId>org.springframework.data</groupId>
+  			<artifactId>spring-data-commons</artifactId>
+  			<version>1.6.3.RELEASE</version>
+		</dependency>
 
 
-	<dependency>
-		<groupId>org.codehaus.jackson</groupId>
-		<artifactId>jackson-jaxrs</artifactId>
-		<version>1.9.13</version>
-	</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+  
+  		 <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connector.version}</version>
+		</dependency>
+ 
+ 
+        
   
   		
 	<!--  Testing Dependency  -->
@@ -169,5 +178,6 @@
 		</plugins>
 		<finalName>SearchWeb</finalName>
 	</build>
+ 
   
 </project>
