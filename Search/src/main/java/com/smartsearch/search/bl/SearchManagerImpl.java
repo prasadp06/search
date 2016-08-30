@@ -86,6 +86,12 @@ public class SearchManagerImpl implements SearchManager {
 	
 	private SearchDao copyToDao(Search dto){
 		SearchDao dao = new SearchDao();
+		dao.setTagName(dto.getTagName());
+		dao.setLocation(dto.getLocation());
+		dao.setAddress(dto.getAddress());
+		dao.setLon(dto.getLat());
+		dao.setLat(dto.getLon());
+		dao.getTags().addAll(dto.getTags());
 		return dao;
 	}
 

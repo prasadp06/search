@@ -10,12 +10,21 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd">
 	
-	<bean id="userBean" class="com.smartsearch.service.user.UserServiceImpl">
+	<import resource="classpath*:search-dao-servlet.xml" />
+	<!--  bean id="userBean" class="com.smartsearch.service.user.UserServiceImpl">
 		<property name="userManager" ref="userManager" />
 	</bean>
 
 	<bean id="searchBean" class="com.smartsearch.service.search.SearchServiceImpl">
 		<property name="searchManager" ref="searchManager"></property>
+	</bean -->
+	
+	<bean id="searchManager" class="com.smartsearch.search.bl.SearchManagerImpl" >
+		<property name="searchDaoService" ref="searchDaoService"></property>
+	</bean>
+	
+	<bean id="userManager" class="com.smartsearch.search.bl.UserManagerImpl" >
+		<property name="userDaoService" ref="userDaoService"></property>
 	</bean>
 
 	

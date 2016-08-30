@@ -2,6 +2,10 @@ package com.smartsearch.search.exception;
 
 public class BOException extends Exception{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8935699871776616280L;
 	private String errorCode;
 	private String errorMessage; 
 	
