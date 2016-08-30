@@ -25,6 +25,11 @@ import org.springframework.jdbc.support.KeyHolder;
 
 import com.smartsearch.dao.jdbc.*;
 //com.smartsearch.dao.jdbc.impl.SearchDaoServiceImpl
+/**
+ * 
+ * @author prasadprabhakaran
+ *
+ */
 public class SearchDaoServiceImpl implements SearchDoaService{
 
 	@Autowired

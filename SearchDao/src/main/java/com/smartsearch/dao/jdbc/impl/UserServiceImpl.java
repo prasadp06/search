@@ -15,6 +15,7 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private DataSource dataSource;
+	
 	private JdbcTemplate template;
 	
 	private static final String INSERT_USER = " INSERT INTO customer (id, name, username, email_address, phone, password, created , updated) "

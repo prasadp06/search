@@ -2,6 +2,11 @@ package com.smartsearch.dao.jdbc;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author prasadprabhakaran
+ *
+ */
 public class SearchDao {
 	Integer id;
 	String tagName; 

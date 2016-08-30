@@ -10,6 +10,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * @author prasadprabhakaran
+ *
+ */
 @Entity
 @Table(name="SEARCH")
 public class SearchDao {

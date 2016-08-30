@@ -1,6 +1,7 @@
 package com.smartsearch.dao.jdbc;
 
 public class UserDao {
+	
 	public String username;
 	public String name;
 	public String email;

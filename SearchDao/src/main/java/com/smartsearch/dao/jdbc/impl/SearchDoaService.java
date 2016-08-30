@@ -2,8 +2,14 @@ package com.smartsearch.dao.jdbc.impl;
 
 import java.util.List;
 
+
 import com.smartsearch.dao.jdbc.SearchDao;
 
+/**
+ * 
+ * @author prasadprabhakaran
+ *
+ */
 public interface SearchDoaService {
 	
 	public boolean insert(final SearchDao search) ;

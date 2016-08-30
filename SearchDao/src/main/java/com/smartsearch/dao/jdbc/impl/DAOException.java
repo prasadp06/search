@@ -1,5 +1,9 @@
 package com.smartsearch.dao.jdbc.impl;
-
+/**
+ * 
+ * @author prasadprabhakaran
+ *
+ */
 public class DAOException extends Exception{
 	
 	public static final String UNEXPECTED = "DB0001";
